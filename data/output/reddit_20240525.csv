@@ -1,0 +1,218 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+1czh51d,Need Advice - Recently joined company as a Senior Data Engineer but BI Manager refusing to give me permissions on Snowflake.,"I recently joined a company as a Senior Data Engineer and have 6+ years in the field. We are working with AWS and Snowflake. I am working along side (but not under) the BI team who have a combination of 6-8 DEs, analysts, etc. I am in my first two weeks, but already have hit roadblocks where I am explicitly not given permissions to create stage integrations to data lakes or to create/use stages in snowflake. This feels weird to not be able to have these permissions and it’s directly impacting my tickets. My manager and skip level are aware but not much is being done.
+
+Any advice on how to navigate this situation? I have unsuccessfully tried to reason with the BI manager that I need these permissions. Should I be patient as it’s just been 2 weeks and I need to earn more trust? Appreciate any advice here
+",60,26,elbowjones00,2024-05-24 09:58:56,https://www.reddit.com/r/dataengineering/comments/1czh51d/need_advice_recently_joined_company_as_a_senior/,False,False,False,False
+1czlc5f,Altenatives to dbt-core and dbt cloud?,"As far as I know there is only one other open-source alternative to dbt-core for managing SQL models programmatically: [SQLMesh](https://github.com/TobikoData/sqlmesh). [Dataform](https://github.com/dataform-co/dataform) is specific to BigQuery.
+
+Recently I stumbled over [SDF](https://www.sdf.com/) which claims to be significantly faster than dbt. Not open source yet, but their website says that an open-source version is coming soon.
+
+Curious to hear what others used before migrating to (or use after migrating from) dbt-core / dbt cloud?",57,41,arimbr,2024-05-24 13:56:09,https://www.reddit.com/r/dataengineering/comments/1czlc5f/altenatives_to_dbtcore_and_dbt_cloud/,False,False,False,False
+1czupek,SQL auto formatter,"What' the best options nowadays for SQL formatting?
+
+There are many diverging conventions and SQL dialects, I know, but one standard must stand out so that we keep our sanity. Like python's black formatter.
+
+What auto formatters are out there and what you recommend?",29,15,taciom,2024-05-24 20:38:18,https://www.reddit.com/r/dataengineering/comments/1czupek/sql_auto_formatter/,False,False,False,False
+1czgfh9,How strictly do you adhere to development best practices when working on a solo project?,"I'm hosting a data engineering hackathon right now, and helping some people along the way. The other day, I was showing how to branch off and use PRs to merge back to `main`. I was then asked why you'd do that if you are the only person working on a project.
+
+I can come up with a few reasons to stick to best practices, but in the end it's mostly ""so that it becomes second nature"". When collaborating, there's a real need for standards everyone adheres to. But for a solo project, it might not be so bad to be a bit more relaxed.
+
+Any thoughts?",30,21,RCdeWit,2024-05-24 09:05:27,https://www.reddit.com/r/dataengineering/comments/1czgfh9/how_strictly_do_you_adhere_to_development_best/,False,False,False,False
+1czq49f,"How often do you use ""data scientist"" things in your data engineering role?","I've recently gotten some heat from my manager for not being more analytically-minded. He asked me to do a bunch of data science type stuff that isn't really part of my toolbox (""Can you build a predictive model on this table to predict X?"") And my answer was basically ""I've never done that before, and I doubt I will do a good job, but I'll give it a shot."" Then, when the result is crap, I get the heat for it.
+
+Basically I have no interest, expertise, or skills in this area.
+
+How often in your position as a DE do you perform things that a data scientist would do? Or things that are entirely outside of your expertise? How do you handle things like that, especially if it's a smaller org and there's no one else there to do it?",25,10,ntdoyfanboy,2024-05-24 17:21:54,https://www.reddit.com/r/dataengineering/comments/1czq49f/how_often_do_you_use_data_scientist_things_in/,False,False,False,False
+1czibh3,Which one is more important in DE: PySpark or Scala?,"What's the most important language to work in DE field?
+
+  
+PYSPARK or SCALA?",19,25,Irachar,2024-05-24 11:17:27,https://www.reddit.com/r/dataengineering/comments/1czibh3/which_one_is_more_important_in_de_pyspark_or_scala/,False,False,False,False
+1d0127x,Should data pipelines be agnostic on data size?,"So I have a question that maybe I am overthinking.
+
+Imagine a basic data pipeline in python that reads data from a sql table and writes it somewhere else, like a data lake. In this case, I normally would do ""SELECT \* FROM table"" to a pandas dataframe and write the file where I want it. My question is: am I doing it right?
+
+This way, I think it's faster, with data capable of being processed in the machine it's running. But for bigger data I should probably process it in chunks. Are there any best practices I am missing? What if the pipeline breaks because of data growth? All the material I read is very high level concepts and doesn't really help with things like this (except Learning Spark which has code examples).
+
+Sorry if this is a dumb question, but I would appreciate it if anyone could clarify this for me.",16,9,CrazyKey4744,2024-05-25 01:43:15,https://www.reddit.com/r/dataengineering/comments/1d0127x/should_data_pipelines_be_agnostic_on_data_size/,False,False,False,False
+1czsgtk,What do you call your wide tables,"I am creating a wide table for analytics  from \`orders\` with additional attributes like \`orderUserState\` ( from order.user.state) , \`orderState\` ( from order.shipping.state) . 
+
+These attributes are selected from predetermined list of questions that analysts ask of orders. 
+
+What should i call this table. Its basically a Order++ table.",16,41,Electrical-Ask847,2024-05-24 19:02:06,https://www.reddit.com/r/dataengineering/comments/1czsgtk/what_do_you_call_your_wide_tables/,False,False,False,False
+1czh5nd,What’s Wrong with BI,,11,6,sbalnojan,2024-05-24 10:00:10,https://www.thdpth.com/p/whats-wrong-with-bi,False,False,False,False
+1czxxtn,"Europe DE with 5yoe, what next ?","
+I'm 29 yo and I have been a DE in Europe for almost 5 years now and I would like your opinion.
+First a bit of background.
+I have worked for 2 companies
+
+First one: worked 3 years, adtech company. My job was to write ETL pipelines in python and a bit of pyspark. We were running Airflow on K8, which I had to deploy and maintain myself. Everything was on GCP. Also had to provide help and infra (Airflow) for data scientists. Did a bit of web dev also, a website that was used internally to run some ML jobs on demand. I was the only DE in the team.
+
+Second one: an e-commerce company, again everything is on GCP. ETL using pyspark only and modelisation in Looker. A bit of no code stuff like Fivetran but not much.
+A bit of streaming with Redpanda and Benthos. Again we have to deploy everything ourselves. This time we are 3 DE and my manager is a DE himself
+
+My goal now is to change company and to grab a better salary at the same time. I'm currently at 60k and I think even though its Europe, I might get a better salary.
+
+My question are:
+
+- what could i work on/ improve that could make my profile more attractive to recruiter ? I've never worked with dbt/snowflake for example, could it be worth it to spend some time on it ?
+
+- how important is still pyspark ? I have room for improvement, is it worth it to work on this ?
+- any tips to maximize salary in Europe as a DE ? Look for remote job with a company oversas ?",7,0,Fit-Needleworker6411,2024-05-24 23:04:12,https://www.reddit.com/r/dataengineering/comments/1czxxtn/europe_de_with_5yoe_what_next/,False,False,False,False
+1czx52s,Relational Data Modeling Question,"Background: I've built application data models in the past.  I've built several star schemas in the past 10 years.  Now I have an project in a 3-layer data warehouse environment (staging/relational/star).
+
+Question: In a relational model for a data warehouse that will be large and maintained by multiple teams, which approach is preferred and why?
+
+1. Three big super-type tables with a bunch of sub-types each, with all relationships between those super-types.  Subtypes will only relate to the super-type tables.
+2. Three big super-type tables with a bunch of sub-types each, but the subtypes will have many other relationships between each other based on the business logic.  Super-types might have some master hierarchy, but the sub-types will have most of the relationships.
+
+1 Pros: Super flexible relationships, everything will be hierarchies and many to many.  Centralized model will give economy of scale over time for devs.  Less tables and relationships.  Con: Higher overall complexity.
+
+2 Pros: Easy for a less technical audience to understand and use.  Specific relationships enforce logic.  Allow separate project teams to manage 95% of their sub-models independently.
+
+1 Mitigate: Could create views for certain sub-types to simplify use, or just direct people to the star schema layer.  Cardinality data quality rules can be written and run in batch to ensure specific relationships.  Document sub-type relationships (should the logical model have these relationships?).
+
+2 Mitigate: Still have master tables to bring everything together in the star if some use case requires it.  Enforce data modeling standards and create a library for reusable designs.
+
+I really appreciate your input.",7,5,Truth-and-Power,2024-05-24 22:27:02,https://www.reddit.com/r/dataengineering/comments/1czx52s/relational_data_modeling_question/,False,False,False,False
+1czrqrc,Recommendations for books/articles/learning resources,"Hi everyone! 
+
+I was recently offered a position as a systems- and solution architect within data and analytics, where the company is working towards transitioning into cloud (Azure). 
+
+I am curious if the architects out there have some recommendations on litterature or other sources of learning that you have found useful or interesting? It doesnt have to be strictly architecture-related and can be on topics that you think are useful to have some knowledge about in such a position. 
+
+In order to put my knowledge level in context:
+I have no previous experience working as an architect but have worked as a data engineer for some years and prior to that i worked as a researcher, which involved quite a lot of data science. So I have a rather broad (if not deep) knowledge of technical areas within BI, ML, data(warehousing/lakes) and analytical solutions and systems.
+
+I also hope that some of the architects out there can share some tricks to succeed in such a position as well!
+",6,4,Blarkent,2024-05-24 18:31:05,https://www.reddit.com/r/dataengineering/comments/1czrqrc/recommendations_for_booksarticleslearning/,False,False,False,False
+1czwdpl,Data Architects :Best design patterns - Top 10,"Looking for detailed and modern architectural designs. What are the best websites for inspiration, learning different design methods, and exploring best practices? Also, what tools do you use for designing?",6,5,priyasweety1,2024-05-24 21:52:52,https://www.reddit.com/r/dataengineering/comments/1czwdpl/data_architects_best_design_patterns_top_10/,False,False,False,False
+1czqpti,How to Handle Change Management for Dimensional Data Models,,6,0,thabarrera,2024-05-24 17:47:32,https://airbyte.com/blog/change-management-for-dimensional-data-models,False,False,False,False
+1d04dzy,How much to charge? ,"Recently had a couple of people express interest in purchasing my time as essentially a consultant. Currently a bit at a loss as far as what to charge them; I've heard ""The effective hourly rate you are/were making x 1.5"" but that seems pretty prescriptive. Wondering what people who are out there use as their base rate - and is it different for projects/times where you're in an advisory role versus projects where you're building the infrastructure out yourself? ",5,3,TheBankTank,2024-05-25 04:58:39,https://www.reddit.com/r/dataengineering/comments/1d04dzy/how_much_to_charge/,False,False,False,False
+1czfxxa,Migration from SAP Data Services to Azure,"1) ETL created in SAP Data Services contains extraction from sources, transformations (also quite heavy business logic, validation, cleaning etc.) done on the fly, pushing data to destinations (mostly SQL databases, DB2, file systems). There are also dependencies between some of the systems which are accessed
+
+2) ETL should be migrated to Azure and use available tools to achieve the same effect - in ideal scenario source data should be ingested into data platform with medalion architekturę
+
+How would you approach to it ? AFAIK there are no analogic ETL tools (on prem IT was SSIS) to perform complex transformations on the fly ? We are considering Databricks, Synapse Dedicated Sql Pool or Synapse Serverless. I know that Mapping Data Flows may support some of the operations needed but IT is rather criticized among data community.",5,1,No-Acanthaceae-9174,2024-05-24 08:28:46,https://www.reddit.com/r/dataengineering/comments/1czfxxa/migration_from_sap_data_services_to_azure/,False,False,False,False
+1d05l60,Dockerizing pipelines,"If you have around 30-40 data pipelines, how do you dockerize them? Is it one container for each pipeline?
+How the repository changes if that is the case?
+Please help as I am bit stuck in coming up with a solution here.
+",3,1,Old_Engineering7711,2024-05-25 06:17:06,https://www.reddit.com/r/dataengineering/comments/1d05l60/dockerizing_pipelines/,False,False,False,False
+1czxptz,Tips for ensuring data quality in microservice architecture?,"Tips for ensuring data quality in microservice architecture?
+
+**The context:**
+
+I am working on an ML project where we are pulling tabular data from surveys in an IOS app, and then sending that data to different GCP services, including big query, cloud functions, pub sub, and cloud run. At a high-level, we have a event-driven architecture which is triggered each time a new survey is filled out, then it will check if all the data is completed to run the model, and if so, it will make a call to the ML API which is in cloud run. The ML API calls upon big query to create the vectors for the model, and the finally makes a prediction, which is sent back to firebase, which can be accessed by the IOS app.
+
+**The challenge:**
+
+As you all know, ML data going into the model must be ""perfect"" meaning all data types have to match how they were in the original model, columns have to be in the same order, null values must be treated the same etc... The challenge I am having is I want to audit the data from point A to B, so from using the app on my phone and entering data to making predictions. What I have found is this is a surprisingly difficult and manual process where I am basically recording my input data manually then adding print statements in all these different cloud environments, and verifying back and forth from the original inputted data, as it travels and gets transformed.
+
+**The question:**
+
+**How have others been able to ensure confidence in the data entering their models when it is passed amongst many different services and environments?**
+
+How can I do this in a more programmatic and automated way? I feel like even if I can get through the tedious process of verifying for a single user and their vector, it still doesn't feel very complete. Some ideas that come to mind are writing data tests and adding human-readable logging statements at every point of data transfer.",3,2,mle-questions,2024-05-24 22:53:59,https://www.reddit.com/r/dataengineering/comments/1czxptz/tips_for_ensuring_data_quality_in_microservice/,False,False,False,False
+1czjf2p,Orchestrating Aws ecs task and glue job,"Hi there,
+I am Currently working on an Aws project.
+Running and application on Aws ecs and then a glue job.
+
+I want to orchestrate these tasks 
+ As soon as my task gets completed on ecs
+ In 2-3 min I want to trigger my glue job if the task on ecs is executed successfully 
+I haven't worked a lot on Aws so don't know how to do this 
+Any possible solutions?
+
+- I found about step functions but it is not the priority",3,2,Ashraf1395,2024-05-24 12:20:41,https://www.reddit.com/r/dataengineering/comments/1czjf2p/orchestrating_aws_ecs_task_and_glue_job/,False,False,False,False
+1d06eoa,"Can't stand my current company...Try to find another ""SQL Developer"" gig and jump ship? Or try to hang on and see if I can catch up on data engineering stuff and shift to a new career path?","So, maybe this isn't the right place to be asking about this, but I often see career posts, so maybe it's okay. This is also probably going to be a venting post because I don't have many people I can talk to about this. I talk to my girlfriend, but she doesn't work in tech, so most of it goes over her head and she can't relate to the issues I'm running into.
+
+I'm in a bit of weird place in my career right now....I'm in my early 30's, and I've been a SQL developer (specifically SQL Server) for the last 12 years or so. And when I say ""SQL Developer"" I mean that pretty strictly.
+
+I was at my last company for about 10 years where I learned SQL, and worked my way up to Sr. SQL Developer. Toward the end, I started working quite a bit in C# as well...but I could tell I hit a salary ceiling there. If I wanted to make more money, I had to leave despite how much I enjoyed working there. So 2 years ago, I left.
+
+My new company started off great, interviews were fantastic and made the company sound incredible...but now having been there for 2 years...I cannot stand it. There's a lot of problems with how they get work done, they constantly kill my projects half way in. I was there nearly 18 months before I commit my first line of production code. They're a fairly large and fairly old company. I think they're stuck in their old school ways of doing things, but they're trying to implement more modern practices and it's not going well, and the VP's of my department are impossible to work with....Suffice to say...I need to leave.
+
+My girlfriend can tell that this job is slowly sucking the life out of me. It's making me hate what I do for a living, and the one thing that made me good at my job was my passion for the work, which is now pretty much gone. I'm constantly depressed and mentally exhausted because of this job.
+
+90% of my experience is in T-SQL development (no DBA skills). And in my opinion...dedicated SQL developer jobs are dying off. The majority of job postings I see, SQL is a skill listed, not the entire role.  
+  
+So this is my conundrum...If I want to find a new job *right now*, it will likely have to be another ""SQL developer"" job. Which from what I've found so far, there aren't that many, and they typically aren't paying as much as I'm making now (\~$140k USD + 3% annual bonus + 4% 401k match + benefits); And at the same time...I don't think I want to continue down this path of being just a ""SQL developer"", that doesn't seem good for my career future.
+
+So now I'm trying to decide between....do I take the first SQL developer job I can manage to get just so I can get away from this company? Maybe I'll get lucky and find a company willing to embrace my passion to learn new skills and let me take on junior level projects outside the scope of being a SQL developer. That was a huge perk of my previous company and was hoping I'd have more opportunities like that at my new one.  
+  
+OR, do I try to hang on to my current job, deal with hating it there while I try to learn some data engineering tools, languages, etc, and see if maybe I can get a job in data engineering and make that my new career path?
+
+It just feels like a crappy situation...stay at the job I hate and hope I can learn new skills that will land me a job in a new field I may or may not like. OR keep on with my current career path which seems to be dropping in demand.",2,0,outatime__,2024-05-25 07:13:13,https://www.reddit.com/r/dataengineering/comments/1d06eoa/cant_stand_my_current_companytry_to_find_another/,False,False,False,False
+1d03y8i,Clickstream data models ,"Novice data person here! 
+
+I am building out a dimensional model for clickstream data.
+
+I have an event_fact table that contains;
+
+event_id - pk
+event_time
+event_name
+url
+transaction_id
+session_id
+user_id
+revenue 
+
+Event name contains the action:
+page_view
+add_to_basket 
+purchase 
+
+If I want to know total page_views I would count(*) where event_name = ‘page_view’.
+
+If I want to know revenue sum(revenue) where event_name =‘purchase’. 
+
+I also have dimensions for user and transaction.
+
+My question is:
+
+Should I be breaking out the event names into numeric columns in the fact?  E.g page_views column. The value is always going to be 1.  Keeping in mind I have about 200 events.
+
+
+Thank you smart people! 
+",2,2,Maximum_Trainer9781,2024-05-25 04:30:45,https://www.reddit.com/r/dataengineering/comments/1d03y8i/clickstream_data_models/,False,False,False,False
+1czwr8r,Architecture Notes — System Design &  Software Architectures | Mahdi Yusuf | Substack,"Just sharing, one of my friends is revamping and coming back with more content.
+
+He writes about tech deep dives with freat visuals. Give it a read, really good and valuable content, helped me with understanding some complex topics.
+
+Topics like partitioning, sharding are really great of DEs.",2,0,mjfnd,2024-05-24 22:09:22,https://architecturenotes.co/,False,False,False,False
+1czv2z4,Internship Project,"Hello everyone, Im software engineering student with a an interrest in data engineering I recently got selected for a summer internship in data engineering and the manager told me to prepare a full personal project idea to be done in 2 months under the supervision and mentorship of a senior data engineer, and I really don't have an idea which project would really help me transition smoothly into data engineering and at the same time represent a good milestone in my CV when mentioned under the internship, I need your help
+Juste to mention : I can code in multiple languages, and have a decent experience with SQL
+Thank you in advance, this community have been a huge asset for me the past two months!",2,3,Electronic_Battle876,2024-05-24 20:55:05,https://www.reddit.com/r/dataengineering/comments/1czv2z4/internship_project/,False,False,False,False
+1czogaq,Getting started with data quality management,"Hi everyone. I am trying to get started with data management, specifically data quality management and developing data quality framework for my job. I am trying to find some good resources (ideally free), with specific examples and tools usage. I have spent time trying to do research on my own but only have very generic stuffs without anything that is helpful to understand the process better. I am a developer so anything technical resources are fine as long as I have real example of how things work. Thanks in advance!",2,4,Antique_Tangelo261,2024-05-24 16:11:29,https://www.reddit.com/r/dataengineering/comments/1czogaq/getting_started_with_data_quality_management/,False,False,False,False
+1czk3ql,Issues with Data Loss in Firebase to BigQuery Integration,"Hi everyone,
+
+We are using the built-in Firebase integration to BigQuery to push data in real-time from Firebase to BigQuery. However, we are facing an issue with data loss.
+
+Our source of truth is the Google Play Console, where we see successful order IDs that are missing in the data we receive from Firebase. Ideally, these order IDs should be present in our Firebase data, but they are not.
+
+Additionally, Google Play Console does not provide user_id or user_details, which could help us detect a pattern and troubleshoot the issue.
+
+Has anyone else faced a similar problem or have any suggestions on how to address this data loss? Any insights on possible reasons for the discrepancy or ways to better track and reconcile this data would be greatly appreciated.
+
+Thank you!",2,0,Secret_Walk6385,2024-05-24 12:57:31,https://www.reddit.com/r/dataengineering/comments/1czk3ql/issues_with_data_loss_in_firebase_to_bigquery/,False,False,False,False
+1czj0rj,AI Agent for monitoring and predicting Snowflake costs!,"Hey folks! My teammates recently worked on building this bot to help orgs monitor and even forecast costs on the Snowflake Data Warehouse.
+
+We just open sourced this Agent and even wrote a guide on how to create one yourself, check it out here: [https://medium.com/snowflake/crystalcosts-building-an-ai-agent-for-cost-monitoring-on-snowflake-c9d49645f5c4](https://medium.com/snowflake/crystalcosts-building-an-ai-agent-for-cost-monitoring-on-snowflake-c9d49645f5c4)
+
+Would love any thoughts!",2,1,Lablade04,2024-05-24 11:59:19,https://www.reddit.com/r/dataengineering/comments/1czj0rj/ai_agent_for_monitoring_and_predicting_snowflake/,False,False,False,False
+1d06tx9,To data or not to data,"I’ve been doing various hands on projects with sql, python, spark and various AWS tools. Im pretty familiar with ETL & ELT I’m pretty familiar with terraform and IaC as well as databricks. I come from a background in python. What do I need to do to break into the data engineering field? Ive feel like I’ve so many projects that I’ve already been working in the data engineering field. I guess jumping into a job assessment test would be valid at this point?",1,0,Cashmeoutpls,2024-05-25 07:44:22,https://www.reddit.com/r/dataengineering/comments/1d06tx9/to_data_or_not_to_data/,False,False,False,False
+1d068r3,DSA Prep for Data Engineering @FinTech,"Hello r/dataengineering peers,
+
+I'm gearing up for my first Senior-level Data Engineering technical round at a top-tier Fintech company. While I'm confident with big data tech stacks like Spark, Hadoop, Kafka, Airflow AWS, etc., I struggle with Data Structures and Algorithms (DSA). I've always heard that DSA is a quick way to assess a candidate, but it seems like most Data Engineers I've spoken to use only about 2-3% of DSA skills in their roles.
+
+Given this, which DSA topics are the most crucial to focus on for such interviews? And what level of questions should a data engineer focus on while preparing?
+
+Additionally, if anyone has a list of practice questions on LeetCode or HackerRank that would be particularly beneficial for Data Engineering roles, please share them.
+
+Thanks in advance!",1,0,arcofiero,2024-05-25 07:01:49,https://www.reddit.com/r/dataengineering/comments/1d068r3/dsa_prep_for_data_engineering_fintech/,False,False,False,False
+1cztbgq,Data engineers in Dubai,"Can we have a meetup in Dubai for all data engineers so we can have some kind of activities networking friendships etc?
+",0,0,Pumpkin-Immediate,2024-05-24 19:38:33,https://www.reddit.com/r/dataengineering/comments/1cztbgq/data_engineers_in_dubai/,False,False,False,False
+1czkojd,"How to build low-latency, incremental cloud ETL pipelines with minimal coding.",,0,0,Nice_Substance_6594,2024-05-24 13:25:32,https://i.redd.it/mudf9thmld2d1.png,False,False,False,False
+1cztyi9,Do you let Dr. Pepper near your keyboard? Or do you too tempt fate?,"TLDR: he spilled a pop. 
+
+https://bearbeta.org/research/f/nasa-computer-assaulted-by-dr-pepper-26-hours-before-launch",0,3,PhecalMatter,2024-05-24 20:05:27,https://www.reddit.com/r/dataengineering/comments/1cztyi9/do_you_let_dr_pepper_near_your_keyboard_or_do_you/,False,False,False,False
